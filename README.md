@@ -132,8 +132,8 @@ toggl.startTimeEntry("my description", myprojectpid)
 ### Stopping Current Timer
 
 ```python
-currentTimer = currentRunningTimeEntry()
-stopTimeEntry(currentTimer['data']['id'])
+currentTimer = toggl.currentRunningTimeEntry()
+toggl.stopTimeEntry(currentTimer['data']['id'])
 ```
 
 ### Creating a custom time entry
